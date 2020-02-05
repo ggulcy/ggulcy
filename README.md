@@ -1,2 +1,3 @@
-# ggulcy
-Develop Portfolio
+# 개발 포트폴리오 
+
+준비중 입니다 ... 
