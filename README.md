@@ -6,16 +6,19 @@
 
 
 ## Dev TimeLine
-![timeline](https://user-images.githubusercontent.com/60222655/74306039-bf703a80-4da4-11ea-9825-6c54dac84383.png)
+![timeline](https://user-images.githubusercontent.com/60222655/74306039-bf703a80-4da4-11ea-9825-6c54dac84383.png)  
 
 
-#
+###  
+###  
+###  
 
+## 안드로이드 소스 정리  
+### 
 
-## 안드로이드 소스 정리
-### 준비중입니다.
-
-#
+###  
+###  
+###  
 
 ## 최근 진행한 안드로이드 프로젝트
 
