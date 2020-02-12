@@ -13,8 +13,19 @@
 ###  
 ###  
 
-## 안드로이드 소스 정리  
-### 
+## 개발 소스 정리  (준비중 입니다)
+##### 1. 안드로이드 기본 컴포넌트 다루기 1  
+##### 2. 안드로이드 기본 컴포넌트 다루기 2
+##### 3. 안드로이드 아키텍처 (MVVM , MVP , 클린아키텍처) 
+##### 4. REST 네트워킹 Volley & Retrofit 다루기 
+##### 5. 이미지뷰 Picasso & Glide 다루기 
+##### 6. Firebase를 이용한 Push
+##### 7. Database SharedPreference & Ream & Mysql
+##### 8. 구글 Admob 
+##### 9. Dependency Injection (Dagger사용하기)
+##### 10. 리액티브 연습 Rxkotlin
+##### 11. 연습 프로젝트 소스 1
+##### 12. 연습 프로젝트 소스 2
 
 ###  
 ###  
