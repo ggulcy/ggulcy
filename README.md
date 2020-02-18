@@ -14,8 +14,8 @@
 ###  
 
 ## 개발 소스 정리  (준비중 입니다)
-##### 1. [안드로이드 기본 컴포넌트 다루기 1](https://github.com/ggulcy/android_basic_practice) 
-##### 2. 안드로이드 기본 컴포넌트 다루기 2
+##### 1. [안드로이드 기본 컴포넌트 다루기](https://github.com/ggulcy/android_basic_practice) 
+##### 2. [코틀린 Standard lib (apply(), run(), with(), let() , foreach() , lazy())](https://github.com/ggulcy/kotlin_practice)
 ##### 3. 안드로이드 아키텍처 (MVVM , MVP , 클린아키텍처) 
 ##### 4. REST 네트워킹 Volley & Retrofit 다루기 
 ##### 5. 이미지뷰 Picasso & Glide 다루기 
