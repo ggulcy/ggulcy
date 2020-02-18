@@ -20,7 +20,7 @@
 ##### 4. REST 네트워킹 Volley & Retrofit 다루기 
 ##### 5. 이미지뷰 Picasso & Glide 다루기 
 ##### 6. Firebase를 이용한 Push
-##### 7. Database SharedPreference & Ream & Mysql
+##### 7. Database SharedPreference & Realm & Mysql
 ##### 8. 구글 Admob 
 ##### 9. Dependency Injection (Dagger사용하기)
 ##### 10. 리액티브 연습 Rxkotlin
