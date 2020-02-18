@@ -13,7 +13,7 @@
 ###  
 ###  
 
-## 개발 소스 정리  (준비중 입니다)
+## 소스 코드
 ##### 1. [안드로이드 기본 UI 다루기](https://github.com/ggulcy/android_basic_practice) 
 ##### 2. [코틀린 연습 예제](https://github.com/ggulcy/kotlin_practice)
 ##### 3. 안드로이드 아키텍처 (MVVM , MVP , 클린아키텍처) 
