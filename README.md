@@ -14,9 +14,9 @@
 ###  
 
 ## 소스 코드
-##### 1. [안드로이드 기본 UI 다루기](https://github.com/ggulcy/android_basic_practice) 
-##### 2. [코틀린 연습 예제](https://github.com/ggulcy/kotlin_practice)
-##### 3. 안드로이드 아키텍처 (MVVM , MVP , 클린아키텍처) 
+##### 1. [안드로이드 기본 UI 다루기](https://github.com/ggulcy/practice_source/tree/android_ui_practice) 
+##### 2. [코틀린 연습 예제](https://github.com/ggulcy/practice_source/tree/kotlin_practice)
+##### 3. [안드로이드 아키텍처 (MVVM , MVP , 클린아키텍처)](https://github.com/ggulcy/practice_source/tree/android_architecture_pattern)
 ##### 4. REST 네트워킹 Volley & Retrofit 다루기 
 ##### 5. 이미지뷰 Picasso & Glide 다루기 
 ##### 6. Firebase를 이용한 Push
