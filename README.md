@@ -17,7 +17,7 @@
 ##### 1. [안드로이드 기본 UI 다루기](https://github.com/ggulcy/practice_source/tree/android_ui_practice) 
 ##### 2. [코틀린 연습 예제](https://github.com/ggulcy/practice_source/tree/kotlin_practice)
 ##### 3. [안드로이드 아키텍처 (MVC,MVVM,MVP)](https://github.com/ggulcy/practice_source/tree/android_architecture_pattern)
-##### 4. [REST 네트워킹 Retrofit을 이용한 날씨 예보 예제 (MVVM + LiveData)](https://github.com/ggulcy/practice_source/tree/android_retrofit_example)
+##### 4. [REST 네트워크 예제 Retrofit2를 이용한 날씨 정보 받아오기 (MVVM + LiveData)](https://github.com/ggulcy/practice_source/tree/android_retrofit_example)
 ##### 5. 이미지뷰 Picasso & Glide 다루기 
 ##### 6. Firebase를 이용한 Push
 ##### 7. Database SharedPreference & Realm & Mysql
