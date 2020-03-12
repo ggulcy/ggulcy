@@ -2,7 +2,7 @@
 ## Introduction
 ###### 안드로이드 4년차 개발자 박찬혁입니다
 ###### Email : ggulcy@gmail.com
-###### 이력서 + 기술 개발경력서 : [이력서 기술 개발 경력서](https://github.com/ggulcy/portfolio/blob/master/%EB%B0%95%EC%B0%AC%ED%98%81%20%EC%9D%B4%EB%A0%A5%EC%84%9C%20%EA%B8%B0%EC%88%A0%20%EA%B2%BD%EB%A0%A5%EC%84%9C.pdf)
+###### 이력서 + 기술 개발경력서 : [이력서 기술 개발 경력서](https://github.com/ggulcy/portfolio/blob/master/%EB%B0%95%EC%B0%AC%ED%98%81%20%EC%9D%B4%EB%A0%A5%EC%84%9C%20%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%EA%B2%BD%EB%A0%A5%EC%84%9C.pdf)
 
 
 ## Dev TimeLine
