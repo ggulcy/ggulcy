@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="spamdetector.zani">
+
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 전화상태 읽기 -->
+    <uses-permission android:name="android.permission.READ_SMS" /> <!-- 전화상태 읽기 -->
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" /> <!-- 전화상태 읽기 -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" /> <!-- 통화목록 읽기 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 다른 앱 위에 표시 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- 문자 받기 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <queries>
+        <package android:name="com.facebook.katana" />
+        <package android:name="jp.naver.line.android" />
+        <package android:name="com.kakao.talk" />
+        <package android:name="org.telegram.messenger" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".NTCSettingActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tel" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusOn">
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusOn" />
+        <activity
+            android:name=".NoticeDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusOn" />
+        <activity
+            android:name=".BlockActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusOn" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StatusOn" />
+        <activity
+            android:name=".util.InsertBlockDialog"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".util.TelegramGuidDialog"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".util.NetworkCheckDialog"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service
+            android:name=".service.CallingService"
+            android:enabled="true"
+            android:permission="android.permission.SYSTEM_ALERT_WINDOW" />
+        <service
+            android:name=".service.JobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".service.ObserverService"
+            android:exported="true" />
+
+        <receiver
+            android:name=".service.IncomingCallBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.RebootReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

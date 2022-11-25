@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">유흥DB</string>
+    <string name="app_version">1.2.3</string>
+    <string name="channel_id">NTC1</string>
+    <string name="observer_channel_id">NTC2</string>
+    <string name="recent_call">최근 통화 내역</string>
+    <string name="id">아이디를 입력해주세요.</string>
+    <string name="pw">비밀번호를 입력해주세요.</string>
+    <string name="login">로그인</string>
+    <string name="auto_login">자동 로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="google_logo">Google Logo</string>
+    <string name="line_logo">LINE Logo</string>
+    <string name="kakao_logo">Kakao Talk Logo</string>
+    <string name="telegram_logo">Telegram Logo</string>
+    <string name="telegram_id"><u>@uhdbmaster</u></string>
+
+    <string name="ntc_comment">설정 화면에서 알림 설정을 OFF 해주세요</string>
+</resources>

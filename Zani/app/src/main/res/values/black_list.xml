@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="black_list">
+        <item>블랙</item>
+        <item>받지마</item>
+        <item>경찰</item>
+        <item>짭새</item>
+        <item>신고</item>
+        <item>협박</item>
+        <item>탕치기</item>
+        <item>신고범</item>
+        <item>진상</item>
+        <item>단속</item>
+        <item>대물</item>
+        <item>인테</item>
+    </string-array>
+</resources>

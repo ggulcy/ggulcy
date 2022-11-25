@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_blue">
+
+    <LinearLayout
+        android:id="@+id/notice_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        style="@style/SelectableItemBackground"
+        android:background="?attr/selectableItemBackground"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBasicComment"
+            android:textSize="25dp"
+            android:text="타이틀"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/notice_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBasicComment"
+            android:textSize="15dp"
+            android:text="타이틀"
+            android:padding="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorBasicTitle"/>
+        <TextView
+            android:id="@+id/notice_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBasicComment"
+            android:textSize="23dp"
+            android:text="타이틀"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

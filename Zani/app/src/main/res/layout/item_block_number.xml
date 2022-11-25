@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/block_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조선족1"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/block_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01012345678"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/block_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="옵션"
+        android:layout_marginRight="20dp"
+        android:textSize="14dp"/>
+
+</LinearLayout>

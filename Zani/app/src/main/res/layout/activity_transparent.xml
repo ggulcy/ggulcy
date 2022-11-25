@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius_all_view"
+    android:paddingTop="18dp"
+    android:paddingHorizontal="18dp"
+    android:paddingBottom="0dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/client_name_from_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="오늘 전화 문의"
+                android:textColor="@color/colorBasicComment"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/license_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="라이센스 만료일"
+                android:textColor="@color/callingReject"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/delete_popup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_clear_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/acceptButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/accept_call_button"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:paddingRight="3dp"
+                android:src="@drawable/accept_call" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="통화 연결"
+                android:textColor="@color/colorWhiteButton"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rejectButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/reject_call_button">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:paddingRight="3dp"
+                android:src="@drawable/reject_call" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="통화 거절"
+                android:textColor="@color/colorWhiteButton"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="18dp">
+        <TextView
+            android:id="@+id/log_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="잠시만 기다려주세요..."
+            android:textColor="@color/colorBasicComment"
+            android:paddingVertical="8dp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:id="@+id/log_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <LinearLayout
+                android:id="@+id/today_log_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="내역조회"
+                    android:textColor="@color/colorBasicComment"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/log_count"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/colorBasicComment"
+                    android:textSize="14dp" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/call_popup_logo"/>
+                <TextView
+                    android:id="@+id/number_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBasicComment"
+                    android:textSize="18dp"
+                    android:minWidth="130dp"/>
+            </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/log_rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:visibility="gone"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

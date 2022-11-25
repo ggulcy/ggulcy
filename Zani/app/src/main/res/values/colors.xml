@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorSymbol">#177BDD</color>
+    <color name="colorSymbolRipple">#7FC8FA</color>
+
+    <color name="colorBrightGrayBackground">#FAFAFA</color>
+    <color name="colorGrayBackground">#F4F5F5</color>
+    <color name="colorBasicBackground">#FFFFFF</color>
+    <color name="colorBasicTitle">#222</color>
+    <color name="colorBasicComment">#666</color>
+    <color name="colorBasicCommentSub">#898989</color>
+    <color name="colorGrayText">#5C5C5C</color>
+    <color name="colorHint">#AAA</color>
+
+    <color name="colorOptionDrawer">#FFF</color>
+
+    <color name="callingAccept">#7cdc60</color>
+    <color name="callingReject">#ff5b4a</color>
+
+    <color name="colorWhiteButton">#FFF</color>
+    <color name="colorWhiteButtonSelected">#DDD</color>
+    <color name="colorWhiteRipple">#CCC</color>
+    <color name="colorBlueButtonSelected">#8EA8DB</color>
+    <color name="colorBlueRipple">#BBF</color>
+
+    <color name="SwitchTrackOn">#1678d7</color>
+    <color name="SwitchTrackOff">#919191</color>
+    <color name="SwitchThumb">#e8e8e8</color>
+
+    <color name="TelegramId">#5a5a5a</color>
+    <color name="TelegramSmallText">#bdbdbd</color>
+
+    <color name="TodayCallQuestion">#15b76c</color>
+    <color name="TodayMessageQuestion">#0091ea</color>
+
+    <color name="BlackListColor">#ea0000</color>
+</resources>

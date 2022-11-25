@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBasicBackground"
+    tools:context=".NoticeDetailActivity">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/notice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="타이틀"
+        android:textSize="28dp"
+        android:textColor="@color/colorBasicTitle"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/notice_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="날짜"
+        android:textSize="18dp"
+        android:textColor="@color/colorHint"
+        android:paddingHorizontal="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorBasicTitle"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내용"
+        android:textSize="18dp"
+        android:textColor="@color/colorBasicComment"
+        android:scrollbars="vertical"
+        android:padding="20dp"/>
+
+</LinearLayout>

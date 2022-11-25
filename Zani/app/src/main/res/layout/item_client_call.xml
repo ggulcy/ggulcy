@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:clickable="false"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/category_view"
+        android:layout_width="28dp"
+        android:layout_height="28dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp">
+        <TextView
+            android:id="@+id/member_name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBasicCommentSub"
+            android:text="업체명"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/saved_name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBasicComment"
+            android:text="저장된 고객 이름"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:gravity="right"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/calling_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2021-07-01"
+            android:textColor="@color/colorBasicComment"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/calling_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:45:30"
+            android:textColor="@color/colorBasicComment"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>
