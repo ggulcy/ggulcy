@@ -403,8 +403,7 @@ class MainActivity : BaseActivity(), MainContract.View, LifecycleObserver {
         no_result_view.visibility = GONE
         main_text.visibility = VISIBLE
 
-        if (sliding_layout.panelState == SlidingUpPanelLayout.PanelState.HIDDEN)
-            sliding_layout.panelState = SlidingUpPanelLayout.PanelState.EXPANDED
+        sliding_layout.panelState = SlidingUpPanelLayout.PanelState.EXPANDED
 
         sliding_layout.panelHeight = panelHeight
         number_input.isFocusableInTouchMode =true
