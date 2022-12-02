@@ -84,11 +84,6 @@ class MainActivity : BaseActivity(), MainContract.View, LifecycleObserver {
 //            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
 //            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
 //        )
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            window.statusBarColor = Color.WHITE
-        }
         
 
         setContentView(R.layout.activity_main)
@@ -482,6 +477,7 @@ class MainActivity : BaseActivity(), MainContract.View, LifecycleObserver {
                 window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
                 window.statusBarColor = Color.WHITE
             }
+
             window.clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
             window.navigationBarColor = Color.TRANSPARENT
 
