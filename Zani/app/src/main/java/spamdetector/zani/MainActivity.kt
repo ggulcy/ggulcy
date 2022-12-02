@@ -79,11 +79,18 @@ class MainActivity : BaseActivity(), MainContract.View, LifecycleObserver {
 
         activity = this
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
-        window.setFlags(
-            // 소프트 키 투명화
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-        )
+//        window.setFlags(
+//            // 소프트 키 투명화
+//            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+//            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+//        )
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            window.statusBarColor = Color.WHITE
+        }
+        
+
         setContentView(R.layout.activity_main)
         connectivityManager = applicationContext.getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager
 
@@ -400,6 +407,10 @@ class MainActivity : BaseActivity(), MainContract.View, LifecycleObserver {
         app_icons.visibility = INVISIBLE
         no_result_view.visibility = GONE
         main_text.visibility = VISIBLE
+
+        if (sliding_layout.panelState == SlidingUpPanelLayout.PanelState.HIDDEN)
+            sliding_layout.panelState = SlidingUpPanelLayout.PanelState.EXPANDED
+
         sliding_layout.panelHeight = panelHeight
         number_input.isFocusableInTouchMode =true
 
@@ -456,6 +467,29 @@ class MainActivity : BaseActivity(), MainContract.View, LifecycleObserver {
             }
         }
     }
+
+    private fun setStatusOrNavigationBarColor(isOpenPanel:Boolean){
+        //확장과 상관없이 statusBar 는 투명한색
+        //패널 확장 여부에 따라 네비게이션바만 투명하게
+        if(isOpenPanel){
+//            window.setFlags(
+//                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+//                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+//            )
+        } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                window.statusBarColor = Color.WHITE
+            }
+            window.clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+            window.navigationBarColor = Color.TRANSPARENT
+
+        }
+
+    }
+
+
     private class UsPhoneNumberFormatter(private val mWeakEditText: WeakReference<EditText>): TextWatcher {
         //This TextWatcher sub-class formats entered numbers as 1 (123) 456-7890
         private var mFormatting // this is a flag which prevents the
